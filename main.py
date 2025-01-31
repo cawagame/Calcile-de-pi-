@@ -38,11 +38,9 @@ def circleCos():
    
 '''
 listPi =[]   #save toutes les dominateur
-def denominateurSomme(n:int)->int:
-    out=n
-    a=[n]
+def denominateurSomme(n:int)->listPi:
+    out:int=n
     for i in range(1+n,n+3):
-        a.append(i)
         out =out*i
 
     listPi.append(out)
@@ -59,6 +57,7 @@ def alternePlusMois():
 def Nilakantha():
     for i in range(2,1520,2):
         denominateurSomme(i)
+        print(listPi)
         print ('methode Nilakamtha ',i,'  pi  :', alternePlusMois())
 
 
